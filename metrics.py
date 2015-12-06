@@ -1,5 +1,5 @@
-from pyspark import RDD
 import numpy as np
+from pyspark import RDD
 
 
 class Metric:
