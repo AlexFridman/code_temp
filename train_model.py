@@ -1,9 +1,10 @@
-from pyspark.mllib.classification import MLNaiveBayesModel
-from pyspark.mllib.linalg import _convert_to_vector
-from pyspark.mllib.linalg import Vectors
-from pyspark import RDD
-import numpy as np
 import math
+
+import numpy as np
+from pyspark import RDD
+from pyspark.mllib.classification import MLNaiveBayesModel
+from pyspark.mllib.linalg import Vectors
+from pyspark.mllib.linalg import _convert_to_vector
 
 
 def train_model(data: RDD, l=1.0) -> MLNaiveBayesModel:
